@@ -1,0 +1,219 @@
+{
+  "schema_version": "0.6.0",
+  "project_id": "GRADUATE-2026-D",
+  "producer": {
+    "kind": "codex",
+    "name": "Codex",
+    "version": "0.6.0"
+  },
+  "artifact_type": "problem_facts",
+  "subproblems": [
+    {
+      "subproblem_id": "Q1",
+      "request": "单服务区直接往返的安全载荷、货箱组批、多指标优化和返航余量敏感性",
+      "expected_output": "机型×服务区安全载荷，逐架次组批，架次数/能耗/累计作业时间及余量敏感性"
+    },
+    {
+      "subproblem_id": "Q2",
+      "request": "无通信约束的异构无人机多点多架次运输调度",
+      "expected_output": "运输路线与时序、逐箱交付、实体机和共享电池占用及可行性与指标权衡"
+    },
+    {
+      "subproblem_id": "Q3",
+      "request": "连续通信约束下运输与中继联合调度",
+      "expected_output": "运输和中继架次、悬停位置/海拔/服务时段/能源组件、逐阶段通信保障与联合指标"
+    },
+    {
+      "subproblem_id": "Q4",
+      "request": "固定第三问方案后划分 2 组与 3 组并比较独立资源配置",
+      "expected_output": "两种分区、各组四类资源需求、冗余、均衡和库存缺口"
+    },
+    {
+      "subproblem_id": "SUB",
+      "request": "汇总题面要求的论文与结果交付",
+      "expected_output": "中文论文、模板结果、检查说明和可运行程序"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "F-001",
+      "statement": "标准场景有 1 个调度中心、15 个服务区、80 个不可拆货箱、3 种运输机型和 8 架实体运输无人机。",
+      "source_id": "SRC-001",
+      "location": "标准测试场景",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-002",
+      "statement": "问题一仅允许 O01→Si→O01 的单服务区直接往返，可同区分批，不考虑实体机和共享电池调度。",
+      "source_id": "SRC-001",
+      "location": "问题一",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-003",
+      "statement": "问题一要求计算每机型每服务区最大安全载荷，组批时每箱仅安排一次且满足质量、体积、返航能量；在全部交付下比较架次数、总能耗、累计作业时间，并改变返航余量做敏感性分析。",
+      "source_id": "SRC-001",
+      "location": "问题一",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-004",
+      "statement": "问题二可一架次访问多个服务区，需联合确定组批、访问序、机型、实体机、电池、开始时刻，并考虑数量、充电周转和时限。",
+      "source_id": "SRC-001",
+      "location": "问题二",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-005",
+      "statement": "问题二的医疗物资须满足期望送达时间，首批保障货箱须满足首批截止时间；其他物资期望送达时间衡量及时性。全部任务完成时间以运输机最晚返回 O01 为准。",
+      "source_id": "SRC-001",
+      "location": "问题二",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-006",
+      "statement": "问题三要求运输机在爬升、巡航、下降、投送阶段连续通信；直连失败时可用一架空中中继，不允许中继间多跳。",
+      "source_id": "SRC-001",
+      "location": "问题三；附录 3",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-007",
+      "statement": "问题三联合确定运输计划和中继悬停经纬度、海拔、服务时段、能源组件；悬停点在 DEM 范围内且离地高度不超附件上限。完成时间以运输和中继全部返回 O01 的最晚时刻为准。",
+      "source_id": "SRC-001",
+      "location": "问题三",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-008",
+      "statement": "问题四分别划分 2、3 个非空任务组，每个服务区恰属一组，同一运输架次涉及的服务区须同组；第三问组批、顺序、运输与中继安排及通信关系保持不变，资源不可跨组调配。",
+      "source_id": "SRC-001",
+      "location": "问题四",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-009",
+      "statement": "问题四比较运输机、共享电池、中继机、中继能源组件的组内独立需求、冗余、工作量均衡及与现有库存的缺口。",
+      "source_id": "SRC-001",
+      "location": "问题四",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-010",
+      "statement": "运输航段为节点间水平直线，巡航海拔为航段 DEM 最高地面高程以上 50 m；O01 作业高度为地面海拔，服务区为地面海拔以上 30 m。",
+      "source_id": "SRC-001",
+      "location": "附录 2：运输航段、时间与能耗",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-011",
+      "statement": "运输及中继能源资源独立记录 SOC，初始均为 100%，复用前须充至 100%；同机型共享电池可跨实体机调度、不同机型不可混用，充电采用两阶段模型。",
+      "source_id": "SRC-001",
+      "location": "附录 2：电池与能源组件充电周转",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-012",
+      "statement": "通信按双向较小链路预算判可用，考虑 DEM 地形遮挡及传播附加损耗；中继接入与回传须同一时刻可用，每架运输机同一时刻只由一个主体保障。",
+      "source_id": "SRC-001",
+      "location": "附录 3：通信链路计算与服务规则",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-013",
+      "statement": "DEM 使用 WGS 84（EPSG:4326），经纬度栅格尺寸均为 1/3600°，NoData 值 -32767；GeoTIFF 与 MAT 口径一致。",
+      "source_id": "SRC-017",
+      "location": "第 1 页：二、坐标与高程口径",
+      "extraction_method": "rendered_visual",
+      "render_verified": true,
+      "raw_value": {
+        "epsg": 4326,
+        "nodata": -32767
+      }
+    },
+    {
+      "fact_id": "F-014",
+      "statement": "题面要求中文论文之外按模板交结果文件、检查说明和可运行程序，并说明各问数据继承关系和公共计算口径。",
+      "source_id": "SRC-001",
+      "location": "四、论文与结果提交要求",
+      "extraction_method": "native_text",
+      "render_verified": false
+    },
+    {
+      "fact_id": "F-015",
+      "statement": "结果模板包含 Q1 单点组批、Q2 运输架次、Q2 逐箱交付、Q3 中继架次、Q3 通信保障、Q4 分区配置六张表。",
+      "source_id": "SRC-019",
+      "location": "工作表名称和第 1 行表头",
+      "extraction_method": "native_text",
+      "render_verified": false
+    }
+  ],
+  "definitions": [
+    {
+      "symbol": "O01",
+      "meaning": "临时调度中心"
+    },
+    {
+      "symbol": "Si",
+      "meaning": "第 i 个服务区，i=1,…,15"
+    },
+    {
+      "symbol": "G01",
+      "meaning": "设在 O01 的固定网关"
+    },
+    {
+      "symbol": "SOC",
+      "meaning": "能源资源的荷电状态"
+    },
+    {
+      "symbol": "DEM",
+      "meaning": "30 米数字高程模型"
+    }
+  ],
+  "ambiguities": [
+    {
+      "id": "A-001",
+      "issue": "没有单独的当年提交细则，页数、封面、匿名、文件命名与最终格式未核实",
+      "status": "open",
+      "impact": "交付合规性，不改变四问数学任务"
+    },
+    {
+      "id": "A-002",
+      "issue": "题面写地理说明 DOCX，随附为 PDF",
+      "status": "documented",
+      "interpretation": "以随附的一页 PDF 为地理数据说明，最终来源完整性仍待核实"
+    },
+    {
+      "id": "A-003",
+      "issue": "多指标优化的优先关系或权重未给定",
+      "status": "open",
+      "impact": "候选模型与比较需要在模型选择前展示"
+    },
+    {
+      "id": "A-004",
+      "issue": "连续通信的时间/空间离散化及边界保证方式未指定",
+      "status": "open",
+      "impact": "第三问可行性证据必须覆盖全航程"
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "AS-001",
+      "statement": "尚未指定多目标权重、时间离散步长或新增物理参数；模型选择前先比较可行的解释与方法。",
+      "status": "provisional"
+    }
+  ],
+  "updated_at": "2026-09-23T13:50:28.352213Z"
+}

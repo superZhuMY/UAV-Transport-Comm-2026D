@@ -1,0 +1,10 @@
+# 第二问求解程序依赖（实测可用版本，2026-09-23）
+# 安装：<venv>/python.exe -m pip install --proxy http://127.0.0.1:7890 -r requirements.txt
+numpy==2.5.1
+openpyxl==3.1.5
+tifffile==2026.9.20
+matplotlib==3.11.1
+ortools==9.15.6755      # CP-SAT 联合调度（清华镜像无此包，需官方源）
+pyproj==3.8.0           # WGS 84 / UTM 49N 坐标转换
+rasterio==1.5.1         # DEM 栅格地理参考交叉核对（主路径用 tifffile 读原始 GeoTIFF 标签）
+pandas==3.0.6

@@ -1,0 +1,749 @@
+{
+  "source_run": "q2_run01",
+  "geometry": "existing cached conservative 2x2 geometry, unchanged",
+  "change_scope": "Only aircraft/battery assignment and integer starts; same models, boxes, routes",
+  "metrics": {
+    "ok": true,
+    "errors": [],
+    "weighted_tardiness": 0.0,
+    "makespan_s": 6505.423650111658,
+    "energy_kwh": 66.33060452896298,
+    "n_sorties": 24,
+    "weighted_completion": 2832055.24879249,
+    "last_delivery_s": 6223.398491722496,
+    "min_hard_slack_s": 478.64654866404453,
+    "worst_box": "S002-MED-01",
+    "n_aircraft": 8,
+    "n_batteries": 14,
+    "peaks": {
+      "aircraft": 8,
+      "battery": 14
+    },
+    "min_return_soc": 0.2097581785318614,
+    "sorties_by_type": {
+      "A": 10,
+      "B": 8,
+      "C": 6
+    },
+    "multi_stop": [
+      "F21"
+    ]
+  },
+  "sorties": [
+    {
+      "sortie_id": "F02",
+      "type_id": "A",
+      "aircraft_id": "U03",
+      "battery_id": "BA03",
+      "start_s": 0.0,
+      "return_s": 1266.5695432950877,
+      "battery_ready_s": 2138.9184213008857,
+      "duration_s": 1266.5695432950877,
+      "energy_kwh": 1.2888999623277615,
+      "return_soc": 0.7135777861493864,
+      "initial_mass_kg": 22.0,
+      "initial_volume_m3": 0.055,
+      "stop_sequence": "O01→S001→O01",
+      "stops": [
+        [
+          "S001",
+          [
+            "S001-WAT-05",
+            "S001-FOD-02"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F04",
+      "type_id": "A",
+      "aircraft_id": "U02",
+      "battery_id": "BA02",
+      "start_s": 0.0,
+      "return_s": 1266.5695432950877,
+      "battery_ready_s": 2138.9184213008857,
+      "duration_s": 1266.5695432950877,
+      "energy_kwh": 1.2888999623277615,
+      "return_soc": 0.7135777861493864,
+      "initial_mass_kg": 22.0,
+      "initial_volume_m3": 0.055,
+      "stop_sequence": "O01→S001→O01",
+      "stops": [
+        [
+          "S001",
+          [
+            "S001-WAT-07",
+            "S001-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F05",
+      "type_id": "B",
+      "aircraft_id": "U05",
+      "battery_id": "BB01",
+      "start_s": 0.0,
+      "return_s": 1510.4702802929446,
+      "battery_ready_s": 2967.8636069705094,
+      "duration_s": 1510.4702802929446,
+      "energy_kwh": 1.8247538307943802,
+      "return_soc": 0.5438115423014049,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S013→O01",
+      "stops": [
+        [
+          "S013",
+          [
+            "S013-MED-01",
+            "S013-WAT-01",
+            "S013-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F06",
+      "type_id": "B",
+      "aircraft_id": "U06",
+      "battery_id": "BB02",
+      "start_s": 0.0,
+      "return_s": 1869.7521946190166,
+      "battery_ready_s": 3463.915668486004,
+      "duration_s": 1869.7521946190166,
+      "energy_kwh": 2.1403772473853557,
+      "return_soc": 0.46490568815366107,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S014→O01",
+      "stops": [
+        [
+          "S014",
+          [
+            "S014-MED-01",
+            "S014-WAT-01",
+            "S014-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F07",
+      "type_id": "C",
+      "aircraft_id": "U07",
+      "battery_id": "BC01",
+      "start_s": 0.0,
+      "return_s": 1645.3997894619165,
+      "battery_ready_s": 3251.9093170680176,
+      "duration_s": 1645.3997894619165,
+      "energy_kwh": 2.854804409622527,
+      "return_soc": 0.643149448797184,
+      "initial_mass_kg": 74.0,
+      "initial_volume_m3": 0.202,
+      "stop_sequence": "O01→S001→O01",
+      "stops": [
+        [
+          "S001",
+          [
+            "S001-WAT-01",
+            "S001-MED-02",
+            "S001-MED-01",
+            "S001-HYG-02",
+            "S001-HYG-01",
+            "S001-WAT-08",
+            "S001-WAT-02",
+            "S001-WAT-04"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F08",
+      "type_id": "C",
+      "aircraft_id": "U08",
+      "battery_id": "BC02",
+      "start_s": 0.0,
+      "return_s": 1565.7313093876123,
+      "battery_ready_s": 3103.1675411079586,
+      "duration_s": 1565.7313093876123,
+      "energy_kwh": 2.5997645478905085,
+      "return_soc": 0.6750294315136864,
+      "initial_mass_kg": 59.0,
+      "initial_volume_m3": 0.156,
+      "stop_sequence": "O01→S006→O01",
+      "stops": [
+        [
+          "S006",
+          [
+            "S006-MED-01",
+            "S006-WAT-01",
+            "S006-HYG-01",
+            "S006-FOD-01",
+            "S006-WAT-03",
+            "S006-WAT-02"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F10",
+      "type_id": "A",
+      "aircraft_id": "U01",
+      "battery_id": "BA01",
+      "start_s": 0.0,
+      "return_s": 1738.1560705577529,
+      "battery_ready_s": 2789.850703471807,
+      "duration_s": 1738.1560705577529,
+      "energy_kwh": 1.9097121908563408,
+      "return_soc": 0.5756195131430354,
+      "initial_mass_kg": 17.0,
+      "initial_volume_m3": 0.039,
+      "stop_sequence": "O01→S007→O01",
+      "stops": [
+        [
+          "S007",
+          [
+            "S007-MED-01",
+            "S007-WAT-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F15",
+      "type_id": "A",
+      "aircraft_id": "U04",
+      "battery_id": "BA04",
+      "start_s": 0.0,
+      "return_s": 1206.5695432950877,
+      "battery_ready_s": 2060.676833594456,
+      "duration_s": 1206.5695432950877,
+      "energy_kwh": 1.2257560048824292,
+      "return_soc": 0.7276097766927936,
+      "initial_mass_kg": 14.0,
+      "initial_volume_m3": 0.027,
+      "stop_sequence": "O01→S001→O01",
+      "stops": [
+        [
+          "S001",
+          [
+            "S001-WAT-06"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F03",
+      "type_id": "A",
+      "aircraft_id": "U04",
+      "battery_id": "BA05",
+      "start_s": 1207.0,
+      "return_s": 2945.156070557753,
+      "battery_ready_s": 4015.8360703104922,
+      "duration_s": 1738.1560705577529,
+      "energy_kwh": 1.9754307683748662,
+      "return_soc": 0.5610153848055852,
+      "initial_mass_kg": 22.0,
+      "initial_volume_m3": 0.055,
+      "stop_sequence": "O01→S007→O01",
+      "stops": [
+        [
+          "S007",
+          [
+            "S007-WAT-02",
+            "S007-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F01",
+      "type_id": "A",
+      "aircraft_id": "U02",
+      "battery_id": "BA06",
+      "start_s": 1267.0,
+      "return_s": 2533.569543295088,
+      "battery_ready_s": 3405.9184213008857,
+      "duration_s": 1266.5695432950877,
+      "energy_kwh": 1.2888999623277615,
+      "return_soc": 0.7135777861493864,
+      "initial_mass_kg": 22.0,
+      "initial_volume_m3": 0.055,
+      "stop_sequence": "O01→S001→O01",
+      "stops": [
+        [
+          "S001",
+          [
+            "S001-WAT-03",
+            "S001-FOD-03"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F11",
+      "type_id": "B",
+      "aircraft_id": "U05",
+      "battery_id": "BB03",
+      "start_s": 1511.0,
+      "return_s": 3453.9589618945197,
+      "battery_ready_s": 5316.8371652718815,
+      "duration_s": 1942.9589618945197,
+      "energy_kwh": 2.7604881616400663,
+      "return_soc": 0.30987795958998343,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S012→O01",
+      "stops": [
+        [
+          "S012",
+          [
+            "S012-MED-01",
+            "S012-WAT-01",
+            "S012-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F13",
+      "type_id": "C",
+      "aircraft_id": "U08",
+      "battery_id": "BC03",
+      "start_s": 1566.0,
+      "return_s": 3743.8869026719112,
+      "battery_ready_s": 6278.7561733375005,
+      "duration_s": 2177.8869026719112,
+      "energy_kwh": 6.282594230149868,
+      "return_soc": 0.21467572123126655,
+      "initial_mass_kg": 67.0,
+      "initial_volume_m3": 0.184,
+      "stop_sequence": "O01→S002→O01",
+      "stops": [
+        [
+          "S002",
+          [
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-HYG-01",
+            "S002-FOD-02",
+            "S002-FOD-01",
+            "S002-WAT-04",
+            "S002-WAT-03"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F22",
+      "type_id": "C",
+      "aircraft_id": "U07",
+      "battery_id": "BC04",
+      "start_s": 1646.0,
+      "return_s": 3961.4109689369757,
+      "battery_ready_s": 6462.794807717944,
+      "duration_s": 2315.4109689369757,
+      "energy_kwh": 6.158955712422039,
+      "return_soc": 0.23013053594724509,
+      "initial_mass_kg": 59.0,
+      "initial_volume_m3": 0.156,
+      "stop_sequence": "O01→S004→O01",
+      "stops": [
+        [
+          "S004",
+          [
+            "S004-MED-01",
+            "S004-WAT-01",
+            "S004-HYG-01",
+            "S004-FOD-01",
+            "S004-WAT-03",
+            "S004-WAT-02"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F14",
+      "type_id": "B",
+      "aircraft_id": "U06",
+      "battery_id": "BB04",
+      "start_s": 1870.0,
+      "return_s": 3425.376902446339,
+      "battery_ready_s": 4882.091966968906,
+      "duration_s": 1555.376902446339,
+      "energy_kwh": 1.8231886104366914,
+      "return_soc": 0.5442028473908271,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S010→O01",
+      "stops": [
+        [
+          "S010",
+          [
+            "S010-MED-01",
+            "S010-WAT-01",
+            "S010-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F17",
+      "type_id": "A",
+      "aircraft_id": "U03",
+      "battery_id": "BA04",
+      "start_s": 2061.0,
+      "return_s": 4344.332822633264,
+      "battery_ready_s": 5703.120915625699,
+      "duration_s": 2283.332822633264,
+      "energy_kwh": 2.972728014204581,
+      "return_soc": 0.33939377462120424,
+      "initial_mass_kg": 16.0,
+      "initial_volume_m3": 0.056,
+      "stop_sequence": "O01→S003→O01",
+      "stops": [
+        [
+          "S003",
+          [
+            "S003-FOD-01",
+            "S003-FOD-02"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F09",
+      "type_id": "A",
+      "aircraft_id": "U01",
+      "battery_id": "BA02",
+      "start_s": 2139.0,
+      "return_s": 4086.057800092819,
+      "battery_ready_s": 5415.963707990535,
+      "duration_s": 1947.057800092819,
+      "energy_kwh": 2.8727512196459406,
+      "return_soc": 0.36161084007867983,
+      "initial_mass_kg": 14.0,
+      "initial_volume_m3": 0.027,
+      "stop_sequence": "O01→S002→O01",
+      "stops": [
+        [
+          "S002",
+          [
+            "S002-WAT-02"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F18",
+      "type_id": "A",
+      "aircraft_id": "U02",
+      "battery_id": "BA03",
+      "start_s": 2534.0,
+      "return_s": 4645.404388882307,
+      "battery_ready_s": 6054.422142663332,
+      "duration_s": 2111.4043888823076,
+      "energy_kwh": 3.146599916934316,
+      "return_soc": 0.3007555740145964,
+      "initial_mass_kg": 14.0,
+      "initial_volume_m3": 0.027,
+      "stop_sequence": "O01→S008→O01",
+      "stops": [
+        [
+          "S008",
+          [
+            "S008-WAT-02"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F16",
+      "type_id": "A",
+      "aircraft_id": "U04",
+      "battery_id": "BA01",
+      "start_s": 2946.0,
+      "return_s": 4624.156070557753,
+      "battery_ready_s": 5647.035042241235,
+      "duration_s": 1678.1560705577529,
+      "energy_kwh": 1.8099656712120538,
+      "return_soc": 0.5977854063973214,
+      "initial_mass_kg": 6.0,
+      "initial_volume_m3": 0.035,
+      "stop_sequence": "O01→S007→O01",
+      "stops": [
+        [
+          "S007",
+          [
+            "S007-HYG-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F23",
+      "type_id": "B",
+      "aircraft_id": "U06",
+      "battery_id": "BB01",
+      "start_s": 3426.0,
+      "return_s": 4942.174861971584,
+      "battery_ready_s": 6512.83969940206,
+      "duration_s": 1516.174861971584,
+      "energy_kwh": 2.0861496248395617,
+      "return_soc": 0.4784625937901096,
+      "initial_mass_kg": 28.0,
+      "initial_volume_m3": 0.054,
+      "stop_sequence": "O01→S005→O01",
+      "stops": [
+        [
+          "S005",
+          [
+            "S005-WAT-02",
+            "S005-WAT-03"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F20",
+      "type_id": "B",
+      "aircraft_id": "U05",
+      "battery_id": "BB02",
+      "start_s": 3464.0,
+      "return_s": 5301.491147497013,
+      "battery_ready_s": 6969.662830982453,
+      "duration_s": 1837.4911474970131,
+      "energy_kwh": 2.311165423427938,
+      "return_soc": 0.4222086441430155,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S015→O01",
+      "stops": [
+        [
+          "S015",
+          [
+            "S015-MED-01",
+            "S015-WAT-01",
+            "S015-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F21",
+      "type_id": "C",
+      "aircraft_id": "U08",
+      "battery_id": "BC02",
+      "start_s": 3744.0,
+      "return_s": 6452.576286317635,
+      "battery_ready_s": 8998.100232831936,
+      "duration_s": 2708.5762863176355,
+      "energy_kwh": 6.321934571745109,
+      "return_soc": 0.2097581785318614,
+      "initial_mass_kg": 62.0,
+      "initial_volume_m3": 0.204,
+      "stop_sequence": "O01→S005→S008→O01",
+      "stops": [
+        [
+          "S005",
+          [
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-HYG-01",
+            "S005-FOD-01"
+          ]
+        ],
+        [
+          "S008",
+          [
+            "S008-MED-01",
+            "S008-WAT-01",
+            "S008-HYG-01",
+            "S008-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F12",
+      "type_id": "C",
+      "aircraft_id": "U07",
+      "battery_id": "BC01",
+      "start_s": 3962.0,
+      "return_s": 6423.489672169111,
+      "battery_ready_s": 8940.48256972913,
+      "duration_s": 2461.4896721691116,
+      "energy_kwh": 6.216589160221613,
+      "return_soc": 0.2229263549722984,
+      "initial_mass_kg": 65.0,
+      "initial_volume_m3": 0.155,
+      "stop_sequence": "O01→S003→O01",
+      "stops": [
+        [
+          "S003",
+          [
+            "S003-MED-01",
+            "S003-WAT-01",
+            "S003-WAT-02",
+            "S003-WAT-03",
+            "S003-WAT-04",
+            "S003-HYG-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F19",
+      "type_id": "B",
+      "aircraft_id": "U06",
+      "battery_id": "BB04",
+      "start_s": 4943.0,
+      "return_s": 6501.442247394405,
+      "battery_ready_s": 8076.47745872389,
+      "duration_s": 1558.4422473944055,
+      "energy_kwh": 2.096235103068041,
+      "return_soc": 0.4759412242329898,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S009→O01",
+      "stops": [
+        [
+          "S009",
+          [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ]
+        ]
+      ]
+    },
+    {
+      "sortie_id": "F24",
+      "type_id": "B",
+      "aircraft_id": "U05",
+      "battery_id": "BB03",
+      "start_s": 5317.0,
+      "return_s": 6505.423650111658,
+      "battery_ready_s": 7637.473079742696,
+      "duration_s": 1188.4236501116584,
+      "energy_kwh": 1.0739602222254718,
+      "return_soc": 0.731509944443632,
+      "initial_mass_kg": 25.0,
+      "initial_volume_m3": 0.067,
+      "stop_sequence": "O01→S011→O01",
+      "stops": [
+        [
+          "S011",
+          [
+            "S011-MED-01",
+            "S011-WAT-01",
+            "S011-FOD-01"
+          ]
+        ]
+      ]
+    }
+  ],
+  "deliveries": {
+    "S001-WAT-05": 916.4081049808772,
+    "S001-FOD-02": 916.4081049808772,
+    "S001-WAT-07": 916.4081049808772,
+    "S001-FOD-01": 916.4081049808772,
+    "S013-MED-01": 1062.7684734798056,
+    "S013-WAT-01": 1062.7684734798056,
+    "S013-FOD-01": 1062.7684734798056,
+    "S014-MED-01": 1242.432763976175,
+    "S014-WAT-01": 1242.432763976175,
+    "S014-FOD-01": 1242.432763976175,
+    "S001-WAT-01": 1323.8848947309582,
+    "S001-MED-02": 1323.8848947309582,
+    "S001-MED-01": 1323.8848947309582,
+    "S001-HYG-02": 1323.8848947309582,
+    "S001-HYG-01": 1323.8848947309582,
+    "S001-WAT-08": 1323.8848947309582,
+    "S001-WAT-02": 1323.8848947309582,
+    "S001-WAT-04": 1323.8848947309582,
+    "S006-MED-01": 1211.5106546938061,
+    "S006-WAT-01": 1211.5106546938061,
+    "S006-HYG-01": 1211.5106546938061,
+    "S006-FOD-01": 1211.5106546938061,
+    "S006-WAT-03": 1211.5106546938061,
+    "S006-WAT-02": 1211.5106546938061,
+    "S007-MED-01": 1146.7180352788764,
+    "S007-WAT-01": 1146.7180352788764,
+    "S001-WAT-06": 856.4081049808772,
+    "S007-WAT-02": 2353.7180352788764,
+    "S007-FOD-01": 2353.7180352788764,
+    "S001-WAT-03": 2183.4081049808774,
+    "S001-FOD-03": 2183.4081049808774,
+    "S012-MED-01": 2792.40948094726,
+    "S012-WAT-01": 2792.40948094726,
+    "S012-FOD-01": 2792.40948094726,
+    "S002-MED-01": 3121.3534513359555,
+    "S002-WAT-01": 3121.3534513359555,
+    "S002-HYG-01": 3121.3534513359555,
+    "S002-FOD-02": 3121.3534513359555,
+    "S002-FOD-01": 3121.3534513359555,
+    "S002-WAT-04": 3121.3534513359555,
+    "S002-WAT-03": 3121.3534513359555,
+    "S004-MED-01": 3236.675484468488,
+    "S004-WAT-01": 3236.675484468488,
+    "S004-HYG-01": 3236.675484468488,
+    "S004-FOD-01": 3236.675484468488,
+    "S004-WAT-03": 3236.675484468488,
+    "S004-WAT-02": 3236.675484468488,
+    "S010-MED-01": 2955.225117889836,
+    "S010-WAT-01": 2955.225117889836,
+    "S010-FOD-01": 2955.225117889836,
+    "S003-FOD-01": 3480.6397446499655,
+    "S003-FOD-02": 3480.6397446499655,
+    "S002-WAT-02": 3364.4689000464095,
+    "S008-WAT-02": 3839.9288611078205,
+    "S007-HYG-01": 4032.7180352788764,
+    "S005-WAT-02": 4466.844097652459,
+    "S005-WAT-03": 4466.844097652459,
+    "S015-MED-01": 4686.185573748507,
+    "S015-WAT-01": 4686.185573748507,
+    "S015-FOD-01": 4686.185573748507,
+    "S005-MED-01": 5105.232579097771,
+    "S005-WAT-01": 5105.232579097771,
+    "S005-HYG-01": 5105.232579097771,
+    "S005-FOD-01": 5105.232579097771,
+    "S008-MED-01": 5750.401766238345,
+    "S008-WAT-01": 5750.401766238345,
+    "S008-HYG-01": 5750.401766238345,
+    "S008-FOD-01": 5750.401766238345,
+    "S003-MED-01": 5620.204836084556,
+    "S003-WAT-01": 5620.204836084556,
+    "S003-WAT-02": 5620.204836084556,
+    "S003-WAT-03": 5620.204836084556,
+    "S003-WAT-04": 5620.204836084556,
+    "S003-HYG-01": 5620.204836084556,
+    "S009-MED-01": 6033.811123697203,
+    "S009-WAT-01": 6033.811123697203,
+    "S009-FOD-01": 6033.811123697203,
+    "S011-MED-01": 6223.398491722496,
+    "S011-WAT-01": 6223.398491722496,
+    "S011-FOD-01": 6223.398491722496
+  },
+  "search": {
+    "A": {
+      "method": "40000 seeded random permutations plus priority orders",
+      "trials": 40093,
+      "feasible": 2236,
+      "best_makespan": 4645.404388882307
+    },
+    "B": {
+      "method": "all task permutations with earliest-start dispatch",
+      "trials": 40376,
+      "feasible": 600,
+      "best_makespan": 6505.423650111658
+    },
+    "C": {
+      "method": "all task permutations with earliest-start dispatch",
+      "trials": 750,
+      "feasible": 98,
+      "best_makespan": 6452.576286317635
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "schema_version": "0.6.0",
+  "project_id": "GRADUATE-2026-D",
+  "producer": {
+    "kind": "codex",
+    "name": "Codex",
+    "version": "0.6.0"
+  },
+  "artifact_type": "task_capabilities",
+  "capabilities": [
+    {
+      "capability_id": "CAP-Q1-LOAD",
+      "subproblem_id": "Q1",
+      "objective": "给出机型×服务区最大安全载荷",
+      "required_output": "3×15 安全载荷表",
+      "fact_ids": [
+        "F-001",
+        "F-003",
+        "F-010"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q1-LOAD",
+          "assertion": "45 个机型—服务区组合均有非负安全载荷，且各载荷在质量与返航能量上可行；缺项或不可行即失败",
+          "judge": "recorded",
+          "assertion_name": "q1_safe_load_complete"
+        }
+      ],
+      "model_ids": [
+        "M-Q1"
+      ],
+      "code_entry_points": [
+        "code/q1.py"
+      ],
+      "result_ids": [
+        "R-Q1-LOAD"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q1-BATCH",
+      "subproblem_id": "Q1",
+      "objective": "完成单点组批并比较三个指标",
+      "required_output": "模板 Q1 架次表与指标比较",
+      "fact_ids": [
+        "F-002",
+        "F-003",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q1-BATCH",
+          "assertion": "80 个货箱在 Q1 架次中各出现一次且同架次只含一个服务区；重复、遗漏或超质量体积能量即失败",
+          "judge": "recorded",
+          "assertion_name": "q1_batch_feasible"
+        },
+        {
+          "check_id": "C-Q1-TRADE",
+          "assertion": "架次数、能耗和累计作业时间的优先或权衡关系是否忠实反映方案",
+          "judge": "human"
+        }
+      ],
+      "model_ids": [
+        "M-Q1"
+      ],
+      "code_entry_points": [
+        "code/q1.py"
+      ],
+      "result_ids": [
+        "R-Q1-BATCH"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q1-SENS",
+      "subproblem_id": "Q1",
+      "objective": "考察返航余量变化",
+      "required_output": "机型载荷与组批变化表",
+      "fact_ids": [
+        "F-003"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q1-SENS",
+          "assertion": "至少两种明确的返航余量情景均重新计算 45 个安全载荷及组批；缺情景或沿用旧载荷即失败",
+          "judge": "recorded",
+          "assertion_name": "q1_margin_sensitivity_complete"
+        }
+      ],
+      "model_ids": [
+        "M-Q1"
+      ],
+      "code_entry_points": [
+        "code/q1.py"
+      ],
+      "result_ids": [
+        "R-Q1-SENS"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q2-SCHEDULE",
+      "subproblem_id": "Q2",
+      "objective": "完成多点多架次调度及逐箱交付",
+      "required_output": "路线、架次、交付时刻、四指标",
+      "fact_ids": [
+        "F-004",
+        "F-005",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q2-SCHEDULE",
+          "assertion": "80 箱各有唯一交付时刻；医疗及首批硬时限全满足，其他箱延迟有记录；缺箱、重复或硬时限违例即失败",
+          "judge": "recorded",
+          "assertion_name": "q2_delivery_complete"
+        },
+        {
+          "check_id": "C-Q2-TRADE",
+          "assertion": "及时性、最晚返航、能耗及架次数的比较是否有可比方案支持",
+          "judge": "human"
+        }
+      ],
+      "model_ids": [
+        "M-Q2"
+      ],
+      "code_entry_points": [
+        "code/q2.py"
+      ],
+      "result_ids": [
+        "R-Q2-SCHEDULE"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q2-RES",
+      "subproblem_id": "Q2",
+      "objective": "证明运输实体机和共享电池资源可行",
+      "required_output": "实体机、电池时间线与复算结果",
+      "fact_ids": [
+        "F-004",
+        "F-011"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q2-RES",
+          "assertion": "每架次的机型、电池与实体机匹配，资源占用及充电不重叠且复用前 SOC 为 100%；任一违例即失败",
+          "judge": "recorded",
+          "assertion_name": "q2_resource_replay_pass"
+        }
+      ],
+      "model_ids": [
+        "M-Q2"
+      ],
+      "code_entry_points": [
+        "code/q2.py"
+      ],
+      "result_ids": [
+        "R-Q2-RES"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q3-JOINT",
+      "subproblem_id": "Q3",
+      "objective": "完成运输与中继联合计划",
+      "required_output": "运输和中继架次、位置、海拔、时段、能源组件及联合指标",
+      "fact_ids": [
+        "F-006",
+        "F-007",
+        "F-011",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q3-JOINT",
+          "assertion": "中继位置在 DEM 内、离地高度合规，运输与中继架次和能源组件满足能量、时序及库存；任一违例即失败",
+          "judge": "recorded",
+          "assertion_name": "q3_joint_resource_feasible"
+        }
+      ],
+      "model_ids": [
+        "M-Q3"
+      ],
+      "code_entry_points": [
+        "code/q3.py"
+      ],
+      "result_ids": [
+        "R-Q3-JOINT"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q3-COMM",
+      "subproblem_id": "Q3",
+      "objective": "验证运输全过程通信",
+      "required_output": "每架次逐阶段通信保障及中断检查",
+      "fact_ids": [
+        "F-006",
+        "F-012",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q3-COMM",
+          "assertion": "每个运输架次全部飞行与投送时段均有直连或同时满足接入与回传的单一中继覆盖；存在未覆盖区间即失败",
+          "judge": "recorded",
+          "assertion_name": "q3_continuous_comm_pass"
+        }
+      ],
+      "model_ids": [
+        "M-Q3"
+      ],
+      "code_entry_points": [
+        "code/q3.py"
+      ],
+      "result_ids": [
+        "R-Q3-COMM"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q4-GROUP",
+      "subproblem_id": "Q4",
+      "objective": "构造 2 组和 3 组分区并保持 Q3 任务不变",
+      "required_output": "两套分区、固定任务继承表",
+      "fact_ids": [
+        "F-008",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q4-GROUP",
+          "assertion": "两种 K 各覆盖 15 个服务区且组非空；同一 Q3 运输架次涉及的服务区同组，Q3 安排未变；任一违例即失败",
+          "judge": "recorded",
+          "assertion_name": "q4_partition_preserves_q3"
+        }
+      ],
+      "model_ids": [
+        "M-Q4"
+      ],
+      "code_entry_points": [
+        "code/q4.py"
+      ],
+      "result_ids": [
+        "R-Q4-GROUP"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-Q4-RES",
+      "subproblem_id": "Q4",
+      "objective": "比较各分区独立资源需求与缺口",
+      "required_output": "各组四类资源、总需求、冗余、均衡和库存缺口",
+      "fact_ids": [
+        "F-009",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-Q4-RES",
+          "assertion": "K=2 与 K=3 的每组四类资源需求均从独立执行时序复算，缺口等于总需求超库存的正部；缺项或不一致即失败",
+          "judge": "recorded",
+          "assertion_name": "q4_resource_gap_reconciles"
+        },
+        {
+          "check_id": "C-Q4-INTERP",
+          "assertion": "两种分区在规模、冗余、均衡和缺口方面的解释是否与数值一致",
+          "judge": "human"
+        }
+      ],
+      "model_ids": [
+        "M-Q4"
+      ],
+      "code_entry_points": [
+        "code/q4.py"
+      ],
+      "result_ids": [
+        "R-Q4-RES"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    },
+    {
+      "capability_id": "CAP-SUBMIT",
+      "subproblem_id": "SUB",
+      "objective": "形成题面要求的交付集合",
+      "required_output": "论文、模板结果、检查说明、可运行程序",
+      "fact_ids": [
+        "F-014",
+        "F-015"
+      ],
+      "acceptance_checks": [
+        {
+          "check_id": "C-SUBMIT",
+          "assertion": "六张模板结果表、检查说明和可运行程序均存在且对象编号及单位一致；任一缺失即失败",
+          "judge": "recorded",
+          "assertion_name": "submission_artifacts_complete"
+        },
+        {
+          "check_id": "C-SUBMIT-RULES",
+          "assertion": "最终格式、页数、封面、匿名和命名是否符合当年主办方规则",
+          "judge": "human"
+        }
+      ],
+      "model_ids": [
+        "M-Q4"
+      ],
+      "code_entry_points": [
+        "code/export_results.py"
+      ],
+      "result_ids": [
+        "R-SUBMIT"
+      ],
+      "lifecycle_state": "planned",
+      "blocking_issues": []
+    }
+  ],
+  "updated_at": "2026-09-23T13:50:28.353834Z"
+}

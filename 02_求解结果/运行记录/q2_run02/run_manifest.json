@@ -1,0 +1,108 @@
+{
+  "run_id": "q2_run02",
+  "input_hash": "6a883a923cca7eef",
+  "config": {
+    "run_id": "q2_run02",
+    "random_seed": 20260923,
+    "time_grid_s": 1.0,
+    "horizon_s": 60000,
+    "horizon_slack_s": 20000,
+    "num_workers": 4,
+    "solver_time_limit_s": {
+      "tardiness": 60.0,
+      "makespan": 180.0,
+      "energy": 120.0,
+      "sorties": 60.0
+    },
+    "candidate_limit": 12000,
+    "multi_stop_max": 3,
+    "nearest_neighbors": 4,
+    "charge_rules": {
+      "fast_below_soc": 0.9,
+      "fast_fraction_of_full_charge": 0.65,
+      "slow_fraction_of_full_charge": 0.35
+    },
+    "assumptions": [
+      "水平巡航能耗 = 单组电池可用能量 × 水平距离 / 该载荷下的等效航程",
+      "爬升附加能耗 = (含电池机身质量 + 当前载荷) × 9.81 × 爬升高度 / (爬升效率 × 3.6e6)，kWh",
+      "下降附加能耗不计（下降能耗效率数据为 0）",
+      "返航安全余量 20%：整趟能耗 ≤ 0.8 × 单组电池可用能量，仅在整趟上限中扣一次",
+      "多停靠架次每站交接完成后重新爬升，返程按空载计算能耗",
+      "同一架次同一停靠点的货箱在整站交接结束时统一记为交付完成",
+      "满电电池自架次准备开始被占用，直到返场后充满；无人机返场即可准备下一趟",
+      "节点地面海拔取节点表，服务区作业海拔 = 地面海拔 + 30 m，巡航海拔 = 航段所经 DEM 像元最高值 + 50 m",
+      "水平直线在 WGS 84 / UTM 49N 米制坐标下定义；DEM 穿格按原始像元保守取并集（中心配准，取像素中心最邻近的 2×2 块）",
+      "硬时限 = 医疗物资期望送达时间与首批截止时间取较早者；软超期量对所有货箱按期望送达时间计算"
+    ],
+    "objective_order": [
+      "weighted_tardiness",
+      "energy",
+      "makespan",
+      "sortie_count"
+    ]
+  },
+  "pool_stats": {
+    "n": 589,
+    "by_source": {
+      "single": 240,
+      "zone_chain_rand": 118,
+      "urgent_bundle": 45,
+      "zone_chain": 35,
+      "pair": 60,
+      "triple": 72,
+      "pair_full": 19
+    },
+    "by_type": {
+      "A": 134,
+      "B": 177,
+      "C": 278
+    },
+    "multi": 151,
+    "max_stops": 3
+  },
+  "solver_reports": [
+    {
+      "phase": "tardiness",
+      "status": "OPTIMAL",
+      "objective": 0.0,
+      "best_bound": 0.0,
+      "elapsed_s": 5.435374
+    },
+    {
+      "phase": "energy",
+      "status": "FEASIBLE",
+      "objective": 61027.0,
+      "best_bound": 60980.0,
+      "elapsed_s": 120.1600161
+    },
+    {
+      "phase": "makespan",
+      "status": "FEASIBLE",
+      "objective": 9586.0,
+      "best_bound": 1.0,
+      "elapsed_s": 180.04536280000002
+    },
+    {
+      "phase": "sorties",
+      "status": "FEASIBLE",
+      "objective": 21.0,
+      "best_bound": 20.0,
+      "elapsed_s": 60.096374700000005
+    }
+  ],
+  "status": "FEASIBLE",
+  "baseline": {
+    "weighted_tardiness": 795520.9533932642,
+    "makespan_s": 15611.00923750359,
+    "energy_kwh": 84.06968950045209,
+    "n_sorties": 31
+  },
+  "final_metrics": {
+    "weighted_tardiness": 0.0,
+    "makespan_s": 9585.769919873701,
+    "energy_kwh": 61.02745918100205,
+    "n_sorties": 21,
+    "sum_priority_times_delivery": 3571263.9309059554
+  },
+  "elapsed_s": 367.16007232666016
+}

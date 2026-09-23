@@ -1,0 +1,23 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ---- 求解中间产物（可由代码重建）----
+03_求解代码/q2/cache/
+03_求解代码/q2/runs/
+
+# ---- 官方原始数据：体积大且不宜公开转发 ----
+数据/
+problem/official/
+
+# ---- Office 临时锁文件与系统文件 ----
+~$*.doc?
+~$*.xls?
+~$*.ppt?
+.DS_Store
+Thumbs.db
+desktop.ini

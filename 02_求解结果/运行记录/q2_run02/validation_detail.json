@@ -1,0 +1,1173 @@
+{
+  "legs": [
+    {
+      "sortie_id": "F01",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S001",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 22.0,
+      "energy_kwh": 0.712758,
+      "time_s": 346.41
+    },
+    {
+      "sortie_id": "F01",
+      "leg": 2,
+      "from_node": "S001",
+      "to_node": "O01",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.576142,
+      "time_s": 350.16
+    },
+    {
+      "sortie_id": "F02",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S001",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 22.0,
+      "energy_kwh": 0.712758,
+      "time_s": 346.41
+    },
+    {
+      "sortie_id": "F02",
+      "leg": 2,
+      "from_node": "S001",
+      "to_node": "O01",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.576142,
+      "time_s": 350.16
+    },
+    {
+      "sortie_id": "F03",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S001",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 22.0,
+      "energy_kwh": 0.712758,
+      "time_s": 346.41
+    },
+    {
+      "sortie_id": "F03",
+      "leg": 2,
+      "from_node": "S001",
+      "to_node": "O01",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.576142,
+      "time_s": 350.16
+    },
+    {
+      "sortie_id": "F04",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S010",
+      "d_km": 4.7845,
+      "cruise_z_m": 435.64,
+      "payload_kg": 25.0,
+      "energy_kwh": 1.119019,
+      "time_s": 455.23
+    },
+    {
+      "sortie_id": "F04",
+      "leg": 2,
+      "from_node": "S010",
+      "to_node": "O01",
+      "d_km": 4.7845,
+      "cruise_z_m": 435.64,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.70417,
+      "time_s": 470.15
+    },
+    {
+      "sortie_id": "F05",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S012",
+      "d_km": 7.3904,
+      "cruise_z_m": 427.09,
+      "payload_kg": 25.0,
+      "energy_kwh": 1.668475,
+      "time_s": 651.41
+    },
+    {
+      "sortie_id": "F05",
+      "leg": 2,
+      "from_node": "S012",
+      "to_node": "O01",
+      "d_km": 7.3904,
+      "cruise_z_m": 427.09,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.092013,
+      "time_s": 661.55
+    },
+    {
+      "sortie_id": "F06",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S001",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 76.0,
+      "energy_kwh": 1.960242,
+      "time_s": 315.88
+    },
+    {
+      "sortie_id": "F06",
+      "leg": 2,
+      "from_node": "S001",
+      "to_node": "O01",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.966075,
+      "time_s": 321.51
+    },
+    {
+      "sortie_id": "F07",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S002",
+      "d_km": 7.4113,
+      "cruise_z_m": 311.22,
+      "payload_kg": 67.0,
+      "energy_kwh": 3.977928,
+      "time_s": 613.35
+    },
+    {
+      "sortie_id": "F07",
+      "leg": 2,
+      "from_node": "S002",
+      "to_node": "O01",
+      "d_km": 7.4113,
+      "cruise_z_m": 311.22,
+      "payload_kg": 0.0,
+      "energy_kwh": 2.304667,
+      "time_s": 622.53
+    },
+    {
+      "sortie_id": "F08",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S013",
+      "d_km": 4.8492,
+      "cruise_z_m": 399.18,
+      "payload_kg": 25.0,
+      "energy_kwh": 1.120326,
+      "time_s": 432.77
+    },
+    {
+      "sortie_id": "F08",
+      "leg": 2,
+      "from_node": "S013",
+      "to_node": "O01",
+      "d_km": 4.8492,
+      "cruise_z_m": 399.18,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.704428,
+      "time_s": 447.7
+    },
+    {
+      "sortie_id": "F09",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S007",
+      "d_km": 4.5345,
+      "cruise_z_m": 519.28,
+      "payload_kg": 70.0,
+      "energy_kwh": 2.702061,
+      "time_s": 544.33
+    },
+    {
+      "sortie_id": "F09",
+      "leg": 2,
+      "from_node": "S007",
+      "to_node": "S015",
+      "d_km": 2.2194,
+      "cruise_z_m": 502.92,
+      "payload_kg": 25.0,
+      "energy_kwh": 0.809265,
+      "time_s": 223.94
+    },
+    {
+      "sortie_id": "F09",
+      "leg": 3,
+      "from_node": "S015",
+      "to_node": "O01",
+      "d_km": 6.0095,
+      "cruise_z_m": 578.07,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.876469,
+      "time_s": 667.25
+    },
+    {
+      "sortie_id": "F10",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S014",
+      "d_km": 5.4196,
+      "cruise_z_m": 591.95,
+      "payload_kg": 25.0,
+      "energy_kwh": 1.306878,
+      "time_s": 612.43
+    },
+    {
+      "sortie_id": "F10",
+      "leg": 2,
+      "from_node": "S014",
+      "to_node": "O01",
+      "d_km": 5.4196,
+      "cruise_z_m": 591.95,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.833499,
+      "time_s": 627.32
+    },
+    {
+      "sortie_id": "F11",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S006",
+      "d_km": 3.1863,
+      "cruise_z_m": 368.42,
+      "payload_kg": 59.0,
+      "energy_kwh": 1.605196,
+      "time_s": 335.51
+    },
+    {
+      "sortie_id": "F11",
+      "leg": 2,
+      "from_node": "S006",
+      "to_node": "O01",
+      "d_km": 3.1863,
+      "cruise_z_m": 368.42,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.994569,
+      "time_s": 354.22
+    },
+    {
+      "sortie_id": "F12",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S008",
+      "d_km": 8.0791,
+      "cruise_z_m": 373.09,
+      "payload_kg": 20.0,
+      "energy_kwh": 1.584271,
+      "time_s": 661.28
+    },
+    {
+      "sortie_id": "F12",
+      "leg": 2,
+      "from_node": "S008",
+      "to_node": "O01",
+      "d_km": 8.0791,
+      "cruise_z_m": 373.09,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.179298,
+      "time_s": 670.82
+    },
+    {
+      "sortie_id": "F13",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S005",
+      "d_km": 5.2806,
+      "cruise_z_m": 326.41,
+      "payload_kg": 59.0,
+      "energy_kwh": 2.562642,
+      "time_s": 497.23
+    },
+    {
+      "sortie_id": "F13",
+      "leg": 2,
+      "from_node": "S005",
+      "to_node": "O01",
+      "d_km": 5.2806,
+      "cruise_z_m": 326.41,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.659578,
+      "time_s": 503.96
+    },
+    {
+      "sortie_id": "F14",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S003",
+      "d_km": 7.2633,
+      "cruise_z_m": 575.9,
+      "payload_kg": 14.0,
+      "energy_kwh": 1.335827,
+      "time_s": 728.58
+    },
+    {
+      "sortie_id": "F14",
+      "leg": 2,
+      "from_node": "S003",
+      "to_node": "O01",
+      "d_km": 7.2633,
+      "cruise_z_m": 575.9,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.096021,
+      "time_s": 742.64
+    },
+    {
+      "sortie_id": "F15",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S003",
+      "d_km": 7.2633,
+      "cruise_z_m": 575.9,
+      "payload_kg": 67.0,
+      "energy_kwh": 4.037541,
+      "time_s": 782.2
+    },
+    {
+      "sortie_id": "F15",
+      "leg": 2,
+      "from_node": "S003",
+      "to_node": "O01",
+      "d_km": 7.2633,
+      "cruise_z_m": 575.9,
+      "payload_kg": 0.0,
+      "energy_kwh": 2.297676,
+      "time_s": 803.28
+    },
+    {
+      "sortie_id": "F16",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S002",
+      "d_km": 7.4113,
+      "cruise_z_m": 311.22,
+      "payload_kg": 14.0,
+      "energy_kwh": 1.281174,
+      "time_s": 591.95
+    },
+    {
+      "sortie_id": "F16",
+      "leg": 2,
+      "from_node": "S002",
+      "to_node": "O01",
+      "d_km": 7.4113,
+      "cruise_z_m": 311.22,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.081322,
+      "time_s": 598.07
+    },
+    {
+      "sortie_id": "F17",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S004",
+      "d_km": 7.7147,
+      "cruise_z_m": 406.21,
+      "payload_kg": 59.0,
+      "energy_kwh": 3.738126,
+      "time_s": 714.68
+    },
+    {
+      "sortie_id": "F17",
+      "leg": 2,
+      "from_node": "S004",
+      "to_node": "O01",
+      "d_km": 7.7147,
+      "cruise_z_m": 406.21,
+      "payload_kg": 0.0,
+      "energy_kwh": 2.42083,
+      "time_s": 724.74
+    },
+    {
+      "sortie_id": "F18",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S008",
+      "d_km": 8.0791,
+      "cruise_z_m": 373.09,
+      "payload_kg": 25.0,
+      "energy_kwh": 1.796051,
+      "time_s": 661.28
+    },
+    {
+      "sortie_id": "F18",
+      "leg": 2,
+      "from_node": "S008",
+      "to_node": "O01",
+      "d_km": 8.0791,
+      "cruise_z_m": 373.09,
+      "payload_kg": 0.0,
+      "energy_kwh": 1.179298,
+      "time_s": 670.82
+    },
+    {
+      "sortie_id": "F19",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S011",
+      "d_km": 2.8081,
+      "cruise_z_m": 295.36,
+      "payload_kg": 25.0,
+      "energy_kwh": 0.65232,
+      "time_s": 276.4
+    },
+    {
+      "sortie_id": "F19",
+      "leg": 2,
+      "from_node": "S011",
+      "to_node": "O01",
+      "d_km": 2.8081,
+      "cruise_z_m": 295.36,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.42164,
+      "time_s": 282.03
+    },
+    {
+      "sortie_id": "F20",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S009",
+      "d_km": 5.7051,
+      "cruise_z_m": 293.23,
+      "payload_kg": 25.0,
+      "energy_kwh": 1.265659,
+      "time_s": 460.81
+    },
+    {
+      "sortie_id": "F20",
+      "leg": 2,
+      "from_node": "S009",
+      "to_node": "O01",
+      "d_km": 5.7051,
+      "cruise_z_m": 293.23,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.830576,
+      "time_s": 467.63
+    },
+    {
+      "sortie_id": "F21",
+      "leg": 1,
+      "from_node": "O01",
+      "to_node": "S001",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 12.0,
+      "energy_kwh": 0.534812,
+      "time_s": 295.51
+    },
+    {
+      "sortie_id": "F21",
+      "leg": 2,
+      "from_node": "S001",
+      "to_node": "O01",
+      "d_km": 3.054,
+      "cruise_z_m": 283.74,
+      "payload_kg": 0.0,
+      "energy_kwh": 0.460821,
+      "time_s": 299.26
+    }
+  ],
+  "hard_boxes": [
+    {
+      "box_id": "S004-MED-01",
+      "sortie_id": "F17",
+      "zone_id": "S004",
+      "deliver_s": 7146.675,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 20.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 53.325,
+      "violation": false
+    },
+    {
+      "box_id": "S004-WAT-01",
+      "sortie_id": "F17",
+      "zone_id": "S004",
+      "deliver_s": 7146.675,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 10.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 53.325,
+      "violation": false
+    },
+    {
+      "box_id": "S008-MED-01",
+      "sortie_id": "F18",
+      "zone_id": "S008",
+      "deliver_s": 7086.277,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 20.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 113.723,
+      "violation": false
+    },
+    {
+      "box_id": "S008-WAT-01",
+      "sortie_id": "F18",
+      "zone_id": "S008",
+      "deliver_s": 7086.277,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 10.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 113.723,
+      "violation": false
+    },
+    {
+      "box_id": "S006-MED-01",
+      "sortie_id": "F11",
+      "zone_id": "S006",
+      "deliver_s": 3323.511,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 276.489,
+      "violation": false
+    },
+    {
+      "box_id": "S006-WAT-01",
+      "sortie_id": "F11",
+      "zone_id": "S006",
+      "deliver_s": 3323.511,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 276.489,
+      "violation": false
+    },
+    {
+      "box_id": "S014-MED-01",
+      "sortie_id": "F10",
+      "zone_id": "S014",
+      "deliver_s": 3185.433,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 22.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 414.567,
+      "violation": false
+    },
+    {
+      "box_id": "S014-WAT-01",
+      "sortie_id": "F10",
+      "zone_id": "S014",
+      "deliver_s": 3185.433,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 414.567,
+      "violation": false
+    },
+    {
+      "box_id": "S007-MED-01",
+      "sortie_id": "F09",
+      "zone_id": "S007",
+      "deliver_s": 3024.326,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 575.674,
+      "violation": false
+    },
+    {
+      "box_id": "S007-WAT-01",
+      "sortie_id": "F09",
+      "zone_id": "S007",
+      "deliver_s": 3024.326,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 575.674,
+      "violation": false
+    },
+    {
+      "box_id": "S003-MED-01",
+      "sortie_id": "F15",
+      "zone_id": "S003",
+      "deliver_s": 6371.205,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 20.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 828.795,
+      "violation": false
+    },
+    {
+      "box_id": "S003-WAT-01",
+      "sortie_id": "F15",
+      "zone_id": "S003",
+      "deliver_s": 6371.205,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 10.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 828.795,
+      "violation": false
+    },
+    {
+      "box_id": "S013-MED-01",
+      "sortie_id": "F08",
+      "zone_id": "S013",
+      "deliver_s": 2618.768,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 981.232,
+      "violation": false
+    },
+    {
+      "box_id": "S013-WAT-01",
+      "sortie_id": "F08",
+      "zone_id": "S013",
+      "deliver_s": 2618.768,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 981.232,
+      "violation": false
+    },
+    {
+      "box_id": "S009-MED-01",
+      "sortie_id": "F20",
+      "zone_id": "S009",
+      "deliver_s": 8848.811,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 16.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 1951.189,
+      "violation": false
+    },
+    {
+      "box_id": "S009-WAT-01",
+      "sortie_id": "F20",
+      "zone_id": "S009",
+      "deliver_s": 8848.811,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 8.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 1951.189,
+      "violation": false
+    },
+    {
+      "box_id": "S002-MED-01",
+      "sortie_id": "F07",
+      "zone_id": "S002",
+      "deliver_s": 1489.353,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2110.647,
+      "violation": false
+    },
+    {
+      "box_id": "S002-WAT-01",
+      "sortie_id": "F07",
+      "zone_id": "S002",
+      "deliver_s": 1489.353,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2110.647,
+      "violation": false
+    },
+    {
+      "box_id": "S012-MED-01",
+      "sortie_id": "F05",
+      "zone_id": "S012",
+      "deliver_s": 1281.409,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 22.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2318.591,
+      "violation": false
+    },
+    {
+      "box_id": "S012-WAT-01",
+      "sortie_id": "F05",
+      "zone_id": "S012",
+      "deliver_s": 1281.409,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2318.591,
+      "violation": false
+    },
+    {
+      "box_id": "S001-MED-01",
+      "sortie_id": "F06",
+      "zone_id": "S001",
+      "deliver_s": 1257.885,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2342.115,
+      "violation": false
+    },
+    {
+      "box_id": "S001-MED-02",
+      "sortie_id": "F06",
+      "zone_id": "S001",
+      "deliver_s": 1257.885,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2342.115,
+      "violation": false
+    },
+    {
+      "box_id": "S001-WAT-01",
+      "sortie_id": "F06",
+      "zone_id": "S001",
+      "deliver_s": 1257.885,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2342.115,
+      "violation": false
+    },
+    {
+      "box_id": "S010-MED-01",
+      "sortie_id": "F04",
+      "zone_id": "S010",
+      "deliver_s": 1085.225,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 24.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2514.775,
+      "violation": false
+    },
+    {
+      "box_id": "S010-WAT-01",
+      "sortie_id": "F04",
+      "zone_id": "S010",
+      "deliver_s": 1085.225,
+      "expected_s": 3600.0,
+      "hard_deadline_s": 3600.0,
+      "priority": 12.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 2514.775,
+      "violation": false
+    },
+    {
+      "box_id": "S011-MED-01",
+      "sortie_id": "F19",
+      "zone_id": "S011",
+      "deliver_s": 7740.398,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 16.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 3059.602,
+      "violation": false
+    },
+    {
+      "box_id": "S011-WAT-01",
+      "sortie_id": "F19",
+      "zone_id": "S011",
+      "deliver_s": 7740.398,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 8.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 3059.602,
+      "violation": false
+    },
+    {
+      "box_id": "S015-MED-01",
+      "sortie_id": "F09",
+      "zone_id": "S015",
+      "deliver_s": 3536.264,
+      "expected_s": 7200.0,
+      "hard_deadline_s": 7200.0,
+      "priority": 18.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 3663.736,
+      "violation": false
+    },
+    {
+      "box_id": "S005-MED-01",
+      "sortie_id": "F13",
+      "zone_id": "S005",
+      "deliver_s": 5051.233,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 16.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 5748.767,
+      "violation": false
+    },
+    {
+      "box_id": "S005-WAT-01",
+      "sortie_id": "F13",
+      "zone_id": "S005",
+      "deliver_s": 5051.233,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 8.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 5748.767,
+      "violation": false
+    },
+    {
+      "box_id": "S015-WAT-01",
+      "sortie_id": "F09",
+      "zone_id": "S015",
+      "deliver_s": 3536.264,
+      "expected_s": 10800.0,
+      "hard_deadline_s": 10800.0,
+      "priority": 8.0,
+      "soft_tardiness_s": 0.0,
+      "hard_slack_s": 7263.736,
+      "violation": false
+    }
+  ],
+  "deliveries": [
+    [
+      "S001-FOD-01",
+      916.4081049808772
+    ],
+    [
+      "S001-FOD-02",
+      916.4081049808772
+    ],
+    [
+      "S001-FOD-03",
+      916.4081049808772
+    ],
+    [
+      "S001-HYG-01",
+      9286.508293270184
+    ],
+    [
+      "S001-HYG-02",
+      9286.508293270184
+    ],
+    [
+      "S001-MED-01",
+      1257.8848947309582
+    ],
+    [
+      "S001-MED-02",
+      1257.8848947309582
+    ],
+    [
+      "S001-WAT-01",
+      1257.8848947309582
+    ],
+    [
+      "S001-WAT-02",
+      1257.8848947309582
+    ],
+    [
+      "S001-WAT-03",
+      1257.8848947309582
+    ],
+    [
+      "S001-WAT-04",
+      1257.8848947309582
+    ],
+    [
+      "S001-WAT-05",
+      1257.8848947309582
+    ],
+    [
+      "S001-WAT-06",
+      916.4081049808772
+    ],
+    [
+      "S001-WAT-07",
+      916.4081049808772
+    ],
+    [
+      "S001-WAT-08",
+      916.4081049808772
+    ],
+    [
+      "S002-FOD-01",
+      1489.3534513359557
+    ],
+    [
+      "S002-FOD-02",
+      6131.947104900409
+    ],
+    [
+      "S002-HYG-01",
+      6131.947104900409
+    ],
+    [
+      "S002-MED-01",
+      1489.3534513359557
+    ],
+    [
+      "S002-WAT-01",
+      1489.3534513359557
+    ],
+    [
+      "S002-WAT-02",
+      1489.3534513359557
+    ],
+    [
+      "S002-WAT-03",
+      1489.3534513359557
+    ],
+    [
+      "S002-WAT-04",
+      1489.3534513359557
+    ],
+    [
+      "S003-FOD-01",
+      6371.204836084556
+    ],
+    [
+      "S003-FOD-02",
+      6371.204836084556
+    ],
+    [
+      "S003-HYG-01",
+      6371.204836084556
+    ],
+    [
+      "S003-MED-01",
+      6371.204836084556
+    ],
+    [
+      "S003-WAT-01",
+      6371.204836084556
+    ],
+    [
+      "S003-WAT-02",
+      5051.584282699139
+    ],
+    [
+      "S003-WAT-03",
+      6371.204836084556
+    ],
+    [
+      "S003-WAT-04",
+      6371.204836084556
+    ],
+    [
+      "S004-FOD-01",
+      7146.675484468487
+    ],
+    [
+      "S004-HYG-01",
+      7146.675484468487
+    ],
+    [
+      "S004-MED-01",
+      7146.675484468487
+    ],
+    [
+      "S004-WAT-01",
+      7146.675484468487
+    ],
+    [
+      "S004-WAT-02",
+      7146.675484468487
+    ],
+    [
+      "S004-WAT-03",
+      7146.675484468487
+    ],
+    [
+      "S005-FOD-01",
+      5051.232579097771
+    ],
+    [
+      "S005-HYG-01",
+      5051.232579097771
+    ],
+    [
+      "S005-MED-01",
+      5051.232579097771
+    ],
+    [
+      "S005-WAT-01",
+      5051.232579097771
+    ],
+    [
+      "S005-WAT-02",
+      5051.232579097771
+    ],
+    [
+      "S005-WAT-03",
+      5051.232579097771
+    ],
+    [
+      "S006-FOD-01",
+      3323.510654693806
+    ],
+    [
+      "S006-HYG-01",
+      3323.510654693806
+    ],
+    [
+      "S006-MED-01",
+      3323.510654693806
+    ],
+    [
+      "S006-WAT-01",
+      3323.510654693806
+    ],
+    [
+      "S006-WAT-02",
+      3323.510654693806
+    ],
+    [
+      "S006-WAT-03",
+      3323.510654693806
+    ],
+    [
+      "S007-FOD-01",
+      3024.3263646651585
+    ],
+    [
+      "S007-HYG-01",
+      3024.3263646651585
+    ],
+    [
+      "S007-MED-01",
+      3024.3263646651585
+    ],
+    [
+      "S007-WAT-01",
+      3024.3263646651585
+    ],
+    [
+      "S007-WAT-02",
+      3024.3263646651585
+    ],
+    [
+      "S008-FOD-01",
+      7086.276950295762
+    ],
+    [
+      "S008-HYG-01",
+      4298.276950295762
+    ],
+    [
+      "S008-MED-01",
+      7086.276950295762
+    ],
+    [
+      "S008-WAT-01",
+      7086.276950295762
+    ],
+    [
+      "S008-WAT-02",
+      4298.276950295762
+    ],
+    [
+      "S009-FOD-01",
+      8848.811123697204
+    ],
+    [
+      "S009-MED-01",
+      8848.811123697204
+    ],
+    [
+      "S009-WAT-01",
+      8848.811123697204
+    ],
+    [
+      "S010-FOD-01",
+      1085.2251178898362
+    ],
+    [
+      "S010-MED-01",
+      1085.2251178898362
+    ],
+    [
+      "S010-WAT-01",
+      1085.2251178898362
+    ],
+    [
+      "S011-FOD-01",
+      7740.398491722496
+    ],
+    [
+      "S011-MED-01",
+      7740.398491722496
+    ],
+    [
+      "S011-WAT-01",
+      7740.398491722496
+    ],
+    [
+      "S012-FOD-01",
+      1281.40948094726
+    ],
+    [
+      "S012-MED-01",
+      1281.40948094726
+    ],
+    [
+      "S012-WAT-01",
+      1281.40948094726
+    ],
+    [
+      "S013-FOD-01",
+      2618.768473479806
+    ],
+    [
+      "S013-MED-01",
+      2618.768473479806
+    ],
+    [
+      "S013-WAT-01",
+      2618.768473479806
+    ],
+    [
+      "S014-FOD-01",
+      3185.432763976175
+    ],
+    [
+      "S014-MED-01",
+      3185.432763976175
+    ],
+    [
+      "S014-WAT-01",
+      3185.432763976175
+    ],
+    [
+      "S015-FOD-01",
+      3536.2635586883853
+    ],
+    [
+      "S015-MED-01",
+      3536.2635586883853
+    ],
+    [
+      "S015-WAT-01",
+      3536.2635586883853
+    ]
+  ]
+}

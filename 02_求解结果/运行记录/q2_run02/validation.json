@@ -1,0 +1,80 @@
+{
+  "box_coverage": {
+    "n_boxes": 80,
+    "n_delivered": 80,
+    "duplicates": {},
+    "missing": [],
+    "wrong_zone": [],
+    "ok": true
+  },
+  "deadlines": {
+    "n_hard": 31,
+    "n_violation": 0,
+    "min_hard_slack_s": 53.325,
+    "worst_box": "S004-MED-01",
+    "ok": true
+  },
+  "payload_energy": {
+    "ok": true,
+    "n_legs": 43,
+    "total_energy_kwh": 61.0275
+  },
+  "resources": {
+    "aircraft": {
+      "n_used": 7,
+      "peak_concurrent": 7,
+      "conflicts": []
+    },
+    "battery": {
+      "n_used": 11,
+      "peak_concurrent": 11,
+      "conflicts": [],
+      "per_type": {
+        "A": 3,
+        "B": 4,
+        "C": 4
+      }
+    },
+    "aircraft_type_match": true,
+    "battery_count_ok": true,
+    "ok": true
+  },
+  "metrics": {
+    "recomputed": {
+      "weighted_tardiness": 0.0,
+      "makespan_s": 9585.76992,
+      "energy_kwh": 61.027459,
+      "n_sorties": 21,
+      "sum_priority_times_delivery": 3571263.930906
+    },
+    "compare": {
+      "weighted_tardiness": {
+        "recomputed": 0.0,
+        "reported": 0.0,
+        "ok": true
+      },
+      "makespan_s": {
+        "recomputed": 9585.76992,
+        "reported": 9585.769919873701,
+        "ok": true
+      },
+      "energy_kwh": {
+        "recomputed": 61.027459,
+        "reported": 61.02745918100205,
+        "ok": true
+      },
+      "n_sorties": {
+        "recomputed": 21,
+        "reported": 21,
+        "ok": true
+      },
+      "sum_priority_times_delivery": {
+        "recomputed": 3571263.930906,
+        "reported": 3571263.9309059554,
+        "ok": true
+      }
+    },
+    "consistent": true
+  },
+  "overall_ok": true
+}

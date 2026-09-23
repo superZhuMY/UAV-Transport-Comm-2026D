@@ -1,0 +1,487 @@
+{
+  "current_input_hash": "6a883a923cca7eef",
+  "pool_n": 589,
+  "raw_n": 612,
+  "multi_by_type": {
+    "C": 151
+  },
+  "unsafe_pruning_count": 23,
+  "unsafe_pruning_examples": [
+    {
+      "deleted_route": [
+        [
+          "S009",
+          [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ]
+        ],
+        [
+          "S001",
+          [
+            "S001-MED-01",
+            "S001-MED-02",
+            "S001-WAT-01",
+            "S001-HYG-02",
+            "S001-HYG-01",
+            "S001-FOD-03",
+            "S001-FOD-02"
+          ]
+        ]
+      ],
+      "type_id": "C",
+      "examples": [
+        {
+          "alternative_route": [
+            [
+              "S001",
+              [
+                "S001-MED-01",
+                "S001-MED-02",
+                "S001-WAT-01",
+                "S001-HYG-02",
+                "S001-HYG-01",
+                "S001-FOD-03",
+                "S001-FOD-02"
+              ]
+            ],
+            [
+              "S009",
+              [
+                "S009-MED-01",
+                "S009-WAT-01",
+                "S009-FOD-01"
+              ]
+            ]
+          ],
+          "worse_boxes": [
+            {
+              "box": "S009-MED-01",
+              "deleted_offset": 1366.169275756122,
+              "kept_offset": 1887.9371080150645,
+              "hard": 10800.0
+            },
+            {
+              "box": "S009-WAT-01",
+              "deleted_offset": 1366.169275756122,
+              "kept_offset": 1887.9371080150645,
+              "hard": 10800.0
+            },
+            {
+              "box": "S009-FOD-01",
+              "deleted_offset": 1366.169275756122,
+              "kept_offset": 1887.9371080150645,
+              "hard": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deleted_route": [
+        [
+          "S002",
+          [
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-HYG-01",
+            "S002-FOD-02",
+            "S002-FOD-01"
+          ]
+        ],
+        [
+          "S009",
+          [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ]
+        ]
+      ],
+      "type_id": "C",
+      "examples": [
+        {
+          "alternative_route": [
+            [
+              "S009",
+              [
+                "S009-MED-01",
+                "S009-WAT-01",
+                "S009-FOD-01"
+              ]
+            ],
+            [
+              "S002",
+              [
+                "S002-MED-01",
+                "S002-WAT-01",
+                "S002-HYG-01",
+                "S002-FOD-02",
+                "S002-FOD-01"
+              ]
+            ]
+          ],
+          "worse_boxes": [
+            {
+              "box": "S002-MED-01",
+              "deleted_offset": 1513.3534513359557,
+              "kept_offset": 1874.8464079017645,
+              "hard": 3600.0
+            },
+            {
+              "box": "S002-WAT-01",
+              "deleted_offset": 1513.3534513359557,
+              "kept_offset": 1874.8464079017645,
+              "hard": 3600.0
+            },
+            {
+              "box": "S002-HYG-01",
+              "deleted_offset": 1513.3534513359557,
+              "kept_offset": 1874.8464079017645,
+              "hard": null
+            },
+            {
+              "box": "S002-FOD-02",
+              "deleted_offset": 1513.3534513359557,
+              "kept_offset": 1874.8464079017645,
+              "hard": null
+            },
+            {
+              "box": "S002-FOD-01",
+              "deleted_offset": 1513.3534513359557,
+              "kept_offset": 1874.8464079017645,
+              "hard": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deleted_route": [
+        [
+          "S003",
+          [
+            "S003-MED-01",
+            "S003-WAT-01",
+            "S003-HYG-01",
+            "S003-FOD-02"
+          ]
+        ],
+        [
+          "S015",
+          [
+            "S015-MED-01",
+            "S015-WAT-01",
+            "S015-FOD-01"
+          ]
+        ]
+      ],
+      "type_id": "C",
+      "examples": [
+        {
+          "alternative_route": [
+            [
+              "S015",
+              [
+                "S015-MED-01",
+                "S015-WAT-01",
+                "S015-FOD-01"
+              ]
+            ],
+            [
+              "S003",
+              [
+                "S003-MED-01",
+                "S003-WAT-01",
+                "S003-HYG-01",
+                "S003-FOD-02"
+              ]
+            ]
+          ],
+          "worse_boxes": [
+            {
+              "box": "S003-MED-01",
+              "deleted_offset": 1616.2048360845558,
+              "kept_offset": 2014.9754896662182,
+              "hard": 7200.0
+            },
+            {
+              "box": "S003-WAT-01",
+              "deleted_offset": 1616.2048360845558,
+              "kept_offset": 2014.9754896662182,
+              "hard": 7200.0
+            },
+            {
+              "box": "S003-HYG-01",
+              "deleted_offset": 1616.2048360845558,
+              "kept_offset": 2014.9754896662182,
+              "hard": null
+            },
+            {
+              "box": "S003-FOD-02",
+              "deleted_offset": 1616.2048360845558,
+              "kept_offset": 2014.9754896662182,
+              "hard": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "deleted_route": [
+        [
+          "S005",
+          [
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-HYG-01",
+            "S005-FOD-01",
+            "S005-WAT-03"
+          ]
+        ],
+        [
+          "S011",
+          [
+            "S011-MED-01",
+            "S011-WAT-01",
+            "S011-FOD-01"
+          ]
+        ]
+      ],
+      "type_id": "C",
+      "examples": [
+        {
+          "alternative_route": [
+            [
+              "S011",
+              [
+                "S011-MED-01",
+                "S011-WAT-01",
+                "S011-FOD-01"
+              ]
+            ],
+            [
+              "S005",
+              [
+                "S005-MED-01",
+                "S005-WAT-01",
+                "S005-HYG-01",
+                "S005-FOD-01",
+                "S005-WAT-03"
+              ]
+            ]
+          ],
+          "worse_boxes": [
+            {
+              "box": "S005-MED-01",
+              "deleted_offset": 1397.2325790977711,
+              "kept_offset": 1802.9917386453512,
+              "hard": 10800.0
+            },
+            {
+              "box": "S005-WAT-01",
+              "deleted_offset": 1397.2325790977711,
+              "kept_offset": 1802.9917386453512,
+              "hard": 10800.0
+            },
+            {
+              "box": "S005-HYG-01",
+              "deleted_offset": 1397.2325790977711,
+              "kept_offset": 1802.9917386453512,
+              "hard": null
+            },
+            {
+              "box": "S005-FOD-01",
+              "deleted_offset": 1397.2325790977711,
+              "kept_offset": 1802.9917386453512,
+              "hard": null
+            },
+            {
+              "box": "S005-WAT-03",
+              "deleted_offset": 1397.2325790977711,
+              "kept_offset": 1802.9917386453512,
+              "hard": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runs": {
+    "q2_run01": {
+      "independent_checks": {
+        "ok": true,
+        "errors": [],
+        "weighted_tardiness": 0.0,
+        "makespan_s": 6533.576286317635,
+        "energy_kwh": 66.33060452896297,
+        "n_sorties": 24,
+        "weighted_completion": 2841803.2487924905,
+        "last_delivery_s": 6224.398491722496,
+        "min_hard_slack_s": 397.64654866404453,
+        "worst_box": "S002-MED-01",
+        "n_aircraft": 8,
+        "n_batteries": 14,
+        "peaks": {
+          "aircraft": 8,
+          "battery": 14
+        },
+        "min_return_soc": 0.2097581785318614,
+        "sorties_by_type": {
+          "A": 10,
+          "B": 8,
+          "C": 6
+        },
+        "multi_stop": [
+          "F21"
+        ],
+        "reconstruction_errors": [],
+        "max_saved_delivery_difference_s": 0.0004917224960081512
+      },
+      "original_validator_ok": true,
+      "tampered_route_and_delivery_still_passes": true,
+      "rescheduled": {
+        "ok": true,
+        "errors": [],
+        "weighted_tardiness": 0.0,
+        "makespan_s": 6505.423650111658,
+        "energy_kwh": 66.33060452896298,
+        "n_sorties": 24,
+        "weighted_completion": 2832055.24879249,
+        "last_delivery_s": 6223.398491722496,
+        "min_hard_slack_s": 478.64654866404453,
+        "worst_box": "S002-MED-01",
+        "n_aircraft": 8,
+        "n_batteries": 14,
+        "peaks": {
+          "aircraft": 8,
+          "battery": 14
+        },
+        "min_return_soc": 0.2097581785318614,
+        "sorties_by_type": {
+          "A": 10,
+          "B": 8,
+          "C": 6
+        },
+        "multi_stop": [
+          "F21"
+        ]
+      },
+      "search": {
+        "A": {
+          "method": "40000 seeded random permutations plus priority orders",
+          "trials": 40093,
+          "feasible": 2236,
+          "best_makespan": 4645.404388882307
+        },
+        "B": {
+          "method": "all task permutations with earliest-start dispatch",
+          "trials": 40376,
+          "feasible": 600,
+          "best_makespan": 6505.423650111658
+        },
+        "C": {
+          "method": "all task permutations with earliest-start dispatch",
+          "trials": 750,
+          "feasible": 98,
+          "best_makespan": 6452.576286317635
+        }
+      }
+    },
+    "q2_run02": {
+      "independent_checks": {
+        "ok": true,
+        "errors": [],
+        "weighted_tardiness": 0.0,
+        "makespan_s": 9585.769919873701,
+        "energy_kwh": 61.02745918100206,
+        "n_sorties": 21,
+        "weighted_completion": 3571263.930905954,
+        "last_delivery_s": 9286.508293270184,
+        "min_hard_slack_s": 53.32451553151259,
+        "worst_box": "S004-MED-01",
+        "n_aircraft": 7,
+        "n_batteries": 11,
+        "peaks": {
+          "aircraft": 7,
+          "battery": 11
+        },
+        "min_return_soc": 0.20809795607682158,
+        "sorties_by_type": {
+          "A": 3,
+          "B": 11,
+          "C": 7
+        },
+        "multi_stop": [
+          "F09"
+        ],
+        "reconstruction_errors": [],
+        "max_saved_delivery_difference_s": 0.0004917224960081512
+      },
+      "original_validator_ok": true,
+      "tampered_route_and_delivery_still_passes": true,
+      "rescheduled": {
+        "ok": true,
+        "errors": [],
+        "weighted_tardiness": 0.0,
+        "makespan_s": 9585.769919873701,
+        "energy_kwh": 61.02745918100205,
+        "n_sorties": 21,
+        "weighted_completion": 3567089.930905955,
+        "last_delivery_s": 9286.508293270184,
+        "min_hard_slack_s": 43.67363533484149,
+        "worst_box": "S007-MED-01",
+        "n_aircraft": 7,
+        "n_batteries": 11,
+        "peaks": {
+          "aircraft": 7,
+          "battery": 11
+        },
+        "min_return_soc": 0.20809795607682158,
+        "sorties_by_type": {
+          "A": 3,
+          "B": 11,
+          "C": 7
+        },
+        "multi_stop": [
+          "F09"
+        ]
+      },
+      "search": {
+        "A": {
+          "method": "all task permutations with earliest-start dispatch",
+          "trials": 12,
+          "feasible": 12,
+          "best_makespan": 1266.5695432950877
+        },
+        "B": {
+          "method": "40000 seeded random permutations plus priority orders",
+          "trials": 40223,
+          "feasible": 65,
+          "best_makespan": 9585.769919873701
+        },
+        "C": {
+          "method": "all task permutations with earliest-start dispatch",
+          "trials": 5082,
+          "feasible": 53,
+          "best_makespan": 7339.195158195542
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "assign_ids.py": "17d9e1312c7efe38084d451a290d906e7635e4d5405806372662c22c159a3d2f",
+    "candidates.py": "9960f849be9d02c2e7070090bd8e890746a82844b02b557f430896f73b4d71fc",
+    "data_io.py": "534b8559ffa4ab7ac7c8f1ecf5baaee017855f71b411111475acba7459026fcb",
+    "export.py": "d71def324df3c8916ec50508c1b565b069fa6a4ef33986da045d1b16973d2c56",
+    "geometry.py": "fb33c1517d8f60290e9e16e71c9bc276e1091276b2d2955f646549a90ff1f926",
+    "inspect_inputs.py": "8006cbbff3a65bb44811a14bdc3b1ac078683f7fcf7b302b6528bbf7ee4441ac",
+    "main.py": "16b00865dc9cd09485c3aa840b3235d7b1eb96fb17bf010c9536d9fa7edac701",
+    "make_report_docx.py": "9cbd1e77b776dd17f02fdc697a3f235058fc30eeb9c62ad97d4b05c70150f303",
+    "physics.py": "eb19261ae3200ab3047c77f1bfa1a54118d5194f2005742c0ea7d02828bd6d1b",
+    "scheduling.py": "dfa780f786cb940f6c5a9ac485d5d8013fcbb33bf8f8b5f0b34ab18f7fcce770",
+    "simulator.py": "b71ae8a6ce241a52450835a7c1e0b4e30dd2259a918f925758354688ed409158",
+    "validator.py": "b810273ef761edeb7f00827b6a7c2946ac33395e775f6834eebfbd586eb3accf"
+  }
+}

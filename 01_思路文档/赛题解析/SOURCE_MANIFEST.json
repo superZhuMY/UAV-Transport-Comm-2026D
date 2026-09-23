@@ -1,0 +1,503 @@
+{
+  "schema_version": "0.6.0",
+  "artifact_type": "source_manifest",
+  "project_id": "GRADUATE-2026-D",
+  "updated_at": "2026-09-23T13:50:54.991803Z",
+  "producer": {
+    "kind": "script",
+    "name": "merge_sources.py",
+    "version": "0.6.0"
+  },
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "path": "problem/official/山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "sha256": "0a4f507b91a02a0ea4264973dd432cdcb5b8916c61c24214719665f326d57685",
+      "size": 6971534,
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\山区洪涝灾害下无人机运输与通信协同优化.docx"
+      },
+      "authoritative_for": [
+        "problem_statement"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-002",
+      "path": "problem/official/数据/无人机应急物资运输基础数据/中继无人机数据.xlsx",
+      "sha256": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+      "size": 11082,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\无人机应急物资运输基础数据\\中继无人机数据.xlsx"
+      },
+      "authoritative_for": [
+        "relay_uav_parameters",
+        "relay_energy_inventory"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-003",
+      "path": "problem/official/数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+      "size": 17474,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx"
+      },
+      "authoritative_for": [
+        "demand_data",
+        "deadline_data",
+        "box_inventory"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-004",
+      "path": "problem/official/数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+      "size": 11017,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx"
+      },
+      "authoritative_for": [
+        "node_coordinates"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-005",
+      "path": "problem/official/数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+      "size": 11746,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx"
+      },
+      "authoritative_for": [
+        "transport_uav_parameters",
+        "battery_inventory"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-006",
+      "path": "problem/official/数据/无人机应急物资运输基础数据/通信链路参数.xlsx",
+      "sha256": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81",
+      "size": 10485,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\无人机应急物资运输基础数据\\通信链路参数.xlsx"
+      },
+      "authoritative_for": [
+        "communication_parameters"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-007",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.mat",
+      "sha256": "c68703e0cc8f94f4bd52ff6e9974b66a2dae33865f0723ad71c04b6694bf4fbf",
+      "size": 6746494,
+      "media_type": "application/octet-stream",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.mat"
+      },
+      "authoritative_for": [
+        "dem_elevation"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-008",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif",
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+      "size": 7867096,
+      "media_type": "image/tiff",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif"
+      },
+      "authoritative_for": [
+        "dem_elevation"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-009",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/村镇点位/镇龙乡及周边村镇点位.csv",
+      "sha256": "b6e2ffc0b728fb33c532e471b6f27dcb54ff70a9a2025546539eea97e5232d6f",
+      "size": 9569,
+      "media_type": "application/vnd.ms-excel",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\村镇点位\\镇龙乡及周边村镇点位.csv"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-010",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/村镇点位/镇龙乡及周边村镇点位.mat",
+      "sha256": "61419e92447ada38c56b7f64f04e4aada2eb1ed076ae33e95f1cbc69f3514beb",
+      "size": 119280,
+      "media_type": "application/octet-stream",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\村镇点位\\镇龙乡及周边村镇点位.mat"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-011",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/水体（面）/镇龙乡及周边水体.csv",
+      "sha256": "4d72a2b46d893701da635ac1b083539568ad3a8b9ffb1b28b09c06bf8af74324",
+      "size": 279146,
+      "media_type": "application/vnd.ms-excel",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\水体（面）\\镇龙乡及周边水体.csv"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-012",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/水体（面）/镇龙乡及周边水体.mat",
+      "sha256": "b79df14bdc0b22811f5c219897a66775d8879a93c4a865e455d8c43ab099b50a",
+      "size": 179705,
+      "media_type": "application/octet-stream",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\水体（面）\\镇龙乡及周边水体.mat"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-013",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/水系（线）/镇龙乡及周边水系.csv",
+      "sha256": "3502b997e000e8043e36b7159202bafb12a0c21d23a8b5ad4ec6877bad580a65",
+      "size": 297223,
+      "media_type": "application/vnd.ms-excel",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\水系（线）\\镇龙乡及周边水系.csv"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-014",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/水系（线）/镇龙乡及周边水系.mat",
+      "sha256": "b89f4f294bf771962676009fa9044f46ef26a06613fb6f91e2c6f9ccd430f8e8",
+      "size": 179598,
+      "media_type": "application/octet-stream",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\水系（线）\\镇龙乡及周边水系.mat"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-015",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/道路/镇龙乡及周边道路.csv",
+      "sha256": "adcd23b4ae2c28475412fc2c8a3c0504b2a293ac2ec25faa1da2fe3c3d063ebe",
+      "size": 1423481,
+      "media_type": "application/vnd.ms-excel",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\道路\\镇龙乡及周边道路.csv"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-016",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/道路/镇龙乡及周边道路.mat",
+      "sha256": "c868717284d8aee60157e3bc9b20e18a81b26fde3d75fc7d80317ef877af9849",
+      "size": 399882,
+      "media_type": "application/octet-stream",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\道路\\镇龙乡及周边道路.mat"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-017",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡地理空间数据说明.pdf",
+      "sha256": "6d1522c6832a5d91a108dae0d07954845025c0dabd44af8ee78c7860d7c405e4",
+      "size": 85812,
+      "media_type": "application/pdf",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡地理空间数据说明.pdf"
+      },
+      "authoritative_for": [
+        "data_documentation"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-018",
+      "path": "problem/official/数据/镇龙乡地理空间数据/镇龙乡地理空间详情地图.html",
+      "sha256": "5bb8082f4f5913e6787f86fa9dd3b6f8cbcfa309359f222f57355d1ae991b452",
+      "size": 4701273,
+      "media_type": "text/html",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡地理空间详情地图.html"
+      },
+      "authoritative_for": [
+        "geospatial_context"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-019",
+      "path": "problem/official/结果提交模板.xlsx",
+      "sha256": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a",
+      "size": 20893,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "official",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": "D:\\CyberStorm\\Documents\\数模\\D题\\结果提交模板.xlsx"
+      },
+      "authoritative_for": [
+        "results_template"
+      ],
+      "derived_from": null,
+      "mutable": false
+    },
+    {
+      "source_id": "SRC-020",
+      "path": "problem/derived/PROBLEM_FULLTEXT_WITH_FORMULAS.txt",
+      "sha256": "dd4878c7b0e40297bb3a428a06eda163e419c9690a9e56040e3282f9b49b9a83",
+      "size": 20243,
+      "media_type": "text/plain",
+      "origin": "team_created",
+      "acquisition": {
+        "method": "derived",
+        "provided_by_user": false,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "problem_text_with_formulas"
+      ],
+      "derived_from": "SRC-001",
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-021",
+      "path": "D:/CyberStorm/Documents/数模/D题/第一问详细建模说明.md",
+      "sha256": "fae8f305ce136d885d6a388658e0a7ba6f3ac88a7c3a7e9248ff9ebf9f51222d",
+      "size": 9266,
+      "media_type": "text/markdown",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-022",
+      "path": "D:/CyberStorm/Documents/数模/D题/第二问详细建模说明.md",
+      "sha256": "92d0ec11b567447ce00a275608fa03cfb69387fbd100664c673b5a83de1d6336",
+      "size": 14707,
+      "media_type": "text/markdown",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-023",
+      "path": "D:/CyberStorm/Documents/数模/D题/第二问细化实施方案.md",
+      "sha256": "64f80fc6659ec79e1770442ceed9bcc7da38653af4c035a06545b4f40c71b6fe",
+      "size": 22082,
+      "media_type": "text/markdown",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-024",
+      "path": "D:/CyberStorm/Documents/数模/D题/D题求解思路说明.md",
+      "sha256": "0f2bd307c9ba3fec6105146c6cf76279f39e6ae0a532a63870133e59105e1740",
+      "size": 9038,
+      "media_type": "text/markdown",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-025",
+      "path": "D:/CyberStorm/Documents/数模/D题/审查复算_Q1.py",
+      "sha256": "5ed46603610c077b384e828f2700b875c8e134ff8be93d249eebae018a79a58f",
+      "size": 8011,
+      "media_type": "text/x-python",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-026",
+      "path": "D:/CyberStorm/Documents/数模/D题/Q2结果.xlsx",
+      "sha256": "fa0dbbf43b6aa21f86cb1bf5d9fe3a2c9dc7733ba51271515f3aec9aa03e714c",
+      "size": 20215,
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    },
+    {
+      "source_id": "SRC-027",
+      "path": "D:/CyberStorm/Documents/数模/D题/Q2结果说明.docx",
+      "sha256": "1e7ef7a713623657974b1a63f7b3c54b491aec0ac8ea2404a911b3b0201050a9",
+      "size": 326305,
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "origin": "external_reference",
+      "acquisition": {
+        "method": "user_local_file",
+        "provided_by_user": true,
+        "source_reference": null
+      },
+      "authoritative_for": [
+        "prior_team_result_not_inherited"
+      ],
+      "derived_from": null,
+      "mutable": true
+    }
+  ]
+}
